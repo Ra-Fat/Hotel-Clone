@@ -1,0 +1,47 @@
+.introuceBlockContact{
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    top: 49%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.introuceBlockContact .Text{
+    font-size: 50px;
+    width: 60rem;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+.introuceBlockContact .pText{
+    width: 41rem;
+    text-align: center;
+    line-height: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF80;
+}
+@media(max-width:1345px){
+    .introuceBlockContact .pText{
+        width: 30rem;
+    }
+}
+@media(max-width:980px){
+    .introuceBlockContact .pText{
+        width: 30rem;
+    }
+    .introuceBlockContact{
+        width: 30rem;
+    }
+    .introuceBlockContact .Text{
+        width: 30rem;
+    }
+}
+@media(max-width:730px){
+    .introuceBlockContact .pText{
+        width: 22rem;
+    }
+}

@@ -28,7 +28,7 @@
 .containerNavbar .navbar nav ul{
     display: flex;
     margin-left: 10.6rem;
-    gap: 1.3rem;
+    gap: 1.5rem;
     list-style: none;
 
 }
@@ -59,6 +59,7 @@
 .contactNumber .phIcon {
     width: 2.5rem;
     height: 2.5rem;
+    text-decoration: none;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -148,7 +149,7 @@ html {
     }
     .btnMenu{
         display: block;
-        margin-right: 8rem;
+        margin-right: 5rem;
     }
     .btnClose{
         position: absolute;
