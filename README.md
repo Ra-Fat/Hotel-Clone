@@ -1,12 +1,70 @@
-# React + Vite
+# 🌍 Hotel Booking Website Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive hotel booking website project built with **React** and **custom CSS**, inspired by the Colorlib "Hotell" template. The goal of the project is to create a clean and modern platform for hotel advertising and booking experiences.
 
-Currently, two official plugins are available:
+The website is a **collaborative team project**, where each member is responsible for specific components. The design has been cloned and customized to practice real-world teamwork, component-based architecture, and responsive front-end development using React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 👥 Team Roles & Contributions
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👨‍💼 RaFat (Team Leader & Router Manager)
+- Manages page routing using **React Router**
+- Builds key components:
+  - **Service**
+  - **Testimonials**
+  - **Instagram**
+  - **Blog**
+  - **Who We Are** (About section)
+
+### 🔍 SeyHak
+- Builds user interaction components:
+  - **Search Bar**
+  - **FAQ (Questions & Answers)**
+
+### 🎁 SengHai
+- Develops:
+  - **Offers** component
+  - **Footer** section with clean layout
+
+### 📞 Neitong
+- Focuses on:
+  - **Contact** page with fully responsive form and design
+
+---
+
+## 🛠️ Technologies Used
+
+- **React** – Core framework for building the UI
+- **React Router** – For navigating between pages
+- **Custom CSS** – All styling is handled manually without frameworks
+- **Vite** – (If used) for fast React development
+
+---
+
+## 🧠 React Concepts Used
+
+### 🔹 Props
+Used to pass data between components for reusability and flexibility (e.g., passing title or image props into card components).
+
+### 🔹 State (`useState`)
+Used to manage interactive UI elements like toggling FAQ answers or controlling form inputs.
+
+### 🔹 Effect (`useEffect`)
+Used in components that require actions when they mount, such as loading animations or scroll effects.
+
+### 🔹 Routing
+Managed using `react-router-dom` to allow smooth navigation between:
+- `/` (Home)
+- `/about`
+- `/services`
+- `/destinations`
+- `/contact`
+- `/offers`
+- And more...
+
+---
+
+## 📁 Project Structure
+
+
