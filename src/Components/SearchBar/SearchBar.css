@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+.search-bar-container {
+    width: 85%;
+    height: 130px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.search-bar-item {
+    width: 291px;
+    height: 50px;
+    background-color: #faf9f9;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.search-bar-item .label {
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.search-bar-input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-bar-select {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    color: grey;
+}
+
+.search-bar-button {
+    width: 291px;
+    height: 50px;
+    background-color: #00917C;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.search-bar-button:hover {
+    background-color: #008f74;
+}

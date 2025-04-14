@@ -1,0 +1,278 @@
+.ContactFormContainer{
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.TextFormContact{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+.SubContactFormContainer{
+    width: 100%;
+    padding-left: 5rem;
+}
+.contact-heading{
+    font-size: 24px;
+    font-weight: bold;
+    color: #00917C;
+    font-family: 'Work Sans', sans-serif;
+}
+.contact-description{
+    width: 40rem;
+    color: #a09e9e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.contact-form{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "a b"
+    "c c"
+    "d d";
+}
+.contact-box{
+    display: flex;
+    gap: 15rem;
+}
+.form-group{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.input1{
+    width: 18.5rem;
+    height: 2.5rem;
+    padding: 10px;
+   border: none;
+    border-radius: 10px;
+    background-color: rgb(237, 237, 237);
+}
+
+.MessageTextarea{
+    grid-area: c;
+    gap: 1rem;
+    flex-direction: column;
+    display: flex;
+}
+textarea{
+    padding: 10px;
+    height: 20rem;
+    background-color: rgb(237, 237, 237);
+    border: none;
+}
+.submitbtn{
+    width: 9rem;
+    font-size: 1rem;
+    height: 3rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #00917C;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contactfirstrow{
+    display: flex;
+    gap: 2rem;
+}
+.contactsecondrow{
+    display: flex;
+    gap: 4rem;
+}
+.rood{
+    margin-top: 10px;
+    color: #a09e9e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 15rem;
+}
+.phonenumber{
+    margin-top: 10px;
+    color: #a09e9e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.FollowCOntain{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.social-icons{
+    display: flex;
+    gap: 5px;
+}
+.fa-instagram,.fa-twitter,.fa-facebook-f,.fa-linkedin-in,.fa-pinterest-p,.fa-dribbble{
+    color: white;
+    width: 30px;
+    background-color: #00917C;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+}
+.emailink a{
+    text-decoration: none;
+    color: #00917C;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+.emailink{
+    margin-top: 10px;
+}
+@media screen and (max-width: 576px) {
+    .ContactFormContainer {
+      padding: 1rem;
+      height: auto;
+    }
+  
+    .SubContactFormContainer {
+      padding-left: 1rem;
+    }
+  
+    .TextFormContact {
+      margin-top: 2rem;
+    }
+  
+    .contact-description {
+      width: 100%;
+      font-size: 13px;
+    }
+  
+    .contact-box {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .input1,
+    textarea {
+      width: 100%;
+    }
+  
+    .submitbtn {
+      width: 100%;
+    }
+  
+    .contactfirstrow,
+    .contactsecondrow {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .rood,
+    .phonenumber,
+    .emailink a {
+      font-size: 13px;
+    }
+  
+    .social-icons {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  
+    .fa-instagram,
+    .fa-twitter,
+    .fa-facebook-f,
+    .fa-linkedin-in,
+    .fa-pinterest-p,
+    .fa-dribbble {
+      width: 32px;
+      height: 32px;
+      font-size: 13px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .contact-box {
+      gap: 5rem;
+    }
+  
+    .contact-description {
+      width: 90%;
+    }
+  
+    .input1,
+    textarea {
+      width: 100%;
+    }
+  
+    .submitbtn {
+      width: 100%;
+    }
+  
+    .contact-info {
+      gap: 2rem;
+    }
+  
+    .contactfirstrow,
+    .contactsecondrow {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .social-icons {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .SubContactFormContainer {
+      padding-left: 2rem;
+    }
+  
+    .contact-box {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .TextFormContact {
+      margin-top: 3rem;
+    }
+  
+    .rood,
+    .phonenumber,
+    .emailink a {
+      font-size: 13px;
+    }
+  
+    .input1,
+    textarea {
+      width: 100%;
+    }
+  
+    .submitbtn {
+      width: 100%;
+    }
+  
+    .fa-instagram,
+    .fa-twitter,
+    .fa-facebook-f,
+    .fa-linkedin-in,
+    .fa-pinterest-p,
+    .fa-dribbble {
+      width: 34px;
+      height: 34px;
+    }
+  }
+    

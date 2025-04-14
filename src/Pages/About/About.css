@@ -45,3 +45,6 @@
         width: 22rem;
     }
 }
+.AboutContainer{
+    overflow: hidden;
+}

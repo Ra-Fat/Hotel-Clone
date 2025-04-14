@@ -6,6 +6,9 @@
     background-repeat: no-repeat;
     position: relative;
 }
+.container{
+    overflow-x: hidden;
+}
 .PicCover .introuceBlock{
     color: white;
     position: absolute;

@@ -1,0 +1,89 @@
+.AboutHotelCompoContainer{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+}
+.subAboutHotelCompoContainer{
+    display: flex;
+    gap: 20rem;
+}
+.leftCompoAbout{
+    display: flex;
+}
+.emptpyBackground{
+    height: 590px;
+    background-color: #00917C;
+    width: 26rem;
+    position: absolute;
+}
+.picSea{
+    width: 35rem;
+    height: 25rem;
+    top: 25%;
+    left: 27%;
+    position: relative;
+}
+.rightCompoAbout{
+    width: 30rem;
+    margin-top: 13rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.rightCompoAbout p{
+    color: #a09e9e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.rightCompoAbout h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #00917C;
+    font-family: 'Work Sans', sans-serif;
+}
+@media (max-width:1200px){
+    .emptpyBackground{
+        height: 540px;
+        width: 24rem;
+    }
+    .picSea{
+        width: 30rem;
+        height: 20rem;
+    }
+    .subAboutHotelCompoContainer{
+        gap: 13rem;
+    }
+}
+@media (max-width:1000px){
+    .emptpyBackground{
+        height: 500px;
+        width: 20rem;
+    }
+    .picSea{
+        width: 28rem;
+        height: 18rem;
+    }
+    .subAboutHotelCompoContainer{
+        gap: 10rem;
+    }
+}
+@media (max-width:950px){
+    .emptpyBackground{
+        height: 500px;
+        width: 30rem;
+    }
+    .picSea{
+        width: 35rem;
+        top: 10%;
+        height: 25rem;
+    }
+    .subAboutHotelCompoContainer{
+        flex-direction: column;
+        gap: 1px;
+    }
+    .AboutHotelCompoContainer{
+        height: 110vh;
+    }
+}
+
+

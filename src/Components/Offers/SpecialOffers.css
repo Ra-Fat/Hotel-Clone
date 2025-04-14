@@ -1,0 +1,125 @@
+.special-offers {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.offers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.offers-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00917c;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  margin-bottom: 30px;
+}
+
+.card-col {
+  flex: 0 0 25%;
+  padding: 0 10px;
+  margin-bottom: 30px;
+}
+
+.destination-card {
+  border: none;
+  background-color: transparent;
+}
+
+.destination-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(1.5);
+  border-radius: 0;
+}
+
+.card-content {
+  padding: 0.5rem 0;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 0.5rem;
+}
+
+.destination-title {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+  color: #333;
+  font-family: "Work Sans", sans-serif;
+}
+
+.destination-location {
+  font-size: 0.85rem;
+  color: #acb7c1;
+  margin-bottom: 0;
+}
+
+.destination-location i {
+  font-size: 0.8rem;
+  color: #b9c1c9;
+}
+
+.price-tag {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dollar-sign {
+  font-size: 0.8rem;
+  color: #00917c;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.price-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #00917c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .card-col {
+    flex: 0 0 50%;
+  }
+
+  .destination-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-col {
+    flex: 0 0 100%;
+  }
+
+  .destination-img {
+    height: 180px;
+  }
+}

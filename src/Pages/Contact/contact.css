@@ -9,6 +9,7 @@
     top: 49%;
     transform: translate(-50%,-50%);
     left: 50%;
+    overflow: hidden;
 }
 .introuceBlockContact .Text{
     font-size: 50px;
@@ -44,4 +45,7 @@
     .introuceBlockContact .pText{
         width: 22rem;
     }
+}
+.ContactContainer{
+    overflow: hidden;
 }
