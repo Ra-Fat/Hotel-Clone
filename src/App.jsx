@@ -6,7 +6,7 @@ import Contact from './Pages/Contact/contact';
 import About from './Pages/About/About';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import AOS from 'aos';
+import AOS from 'aos';  
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
