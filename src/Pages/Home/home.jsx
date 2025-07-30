@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.css'
-import Navbar from '../../Components/Navbar'
 import seaBackground from '../../assets/img_1.jpg'
+import Navbar from '../../Components/Navbar'
 import BlogPost from '../../Components/Blog/Blog'
 import InstagramPart from '../../Components/Instagram/Instagram'
 import ServiceSmallPart from '../../Components/SmallService/Test'
@@ -23,7 +23,7 @@ function Home() {
           </div>
 
       </div>
-      <SearchBar/>
+      {/* <SearchBar/> */}
       {/* About */}
       <ServiceSmallPart/>
       <SideImage/>
