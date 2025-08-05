@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.css'
 import seaBackground from '../../assets/img_1.jpg'
-import Navbar from '../../Components/Navbar'
+import Navbar from '../../Components/navbar'
 import BlogPost from '../../Components/Blog/Blog'
 import InstagramPart from '../../Components/Instagram/Instagram'
 import ServiceSmallPart from '../../Components/SmallService/Test'

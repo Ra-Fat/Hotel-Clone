@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 import React, { useState, useEffect, useRef } from "react";
 import './navbar.css'
 
-function Navbar() {
+export default function Navbar() {
     //use to referce to open sidebar
     const [isOpen, setIsOpen] = useState(false);
     const navRef = useRef(null); // Reference to the nav menu
@@ -71,5 +71,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;
