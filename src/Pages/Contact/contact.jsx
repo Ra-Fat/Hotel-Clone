@@ -1,6 +1,6 @@
 import React from 'react'
 import './contact.css'
-import Navbar from '../../Components/Navbar'
+import Navbar from '../../Components/navbar'
 import ContactBackground from '../../assets/img_4.jpg'
 import InstagramPart from '../../Components/Instagram/Instagram'
 import Footer from '../../Components/Footer/footer'

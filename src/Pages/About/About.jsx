@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Navbar from '../../Components/Navbar'
+import Navbar from '../../Components/navbar'
 import AboutBackground from '../../assets/img_3.jpg'
 import AboutSmall from '../../Components/SmallAboutUs/AboutUS'
 import InstagramPart from '../../Components/Instagram/Instagram'

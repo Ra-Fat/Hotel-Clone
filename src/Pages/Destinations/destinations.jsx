@@ -1,6 +1,6 @@
 import React from 'react'
 import './destinations.css'
-import Navbar from '../../Components/Navbar'
+import Navbar from '../../Components/navbar'
 import destinationBackground from '../../assets/img_2.jpg'
 import InstagramPart from '../../Components/Instagram/Instagram'
 import SpecialOffers from '../../Components/Offers/SpecialOffers' 

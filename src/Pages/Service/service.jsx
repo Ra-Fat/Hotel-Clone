@@ -1,6 +1,6 @@
 import React from 'react'
 import './service.css'
-import Navbar from '../../Components/Navbar'
+import Navbar from '../../Components/navbar'
 import seaBackground from '../../assets/img_3.jpg'
 import ServiceSmallPart from '../../Components/SmallService/Test'
 import InstagramPart from '../../Components/Instagram/Instagram'
