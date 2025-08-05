@@ -5,25 +5,27 @@
     background-color: rgb(255, 255, 255);
 }
 
-.instagramContainer .textInstaComponent{
+.instagramContainer .textInstaComponent {
     padding-top: 7.3rem;
-    width: 100%; 
+    width: 100%;
     margin-bottom: 3rem;
 }
 
-.textInstaComponent .subTextInsta{
+.textInstaComponent .subTextInsta {
     display: flex;
-    width: 83%;
-    justify-content: center;
+    width: 100%;
+    padding-left: 6rem;
     align-items: center;
     gap: 13rem;
 }
-.subTextInsta .titleInstagram{
+
+.subTextInsta .titleInstagram {
     font-size: 24px;
     font-weight: bold;
     color: #00917C;
     font-family: 'Work Sans', sans-serif;
 }
+
 .subTextInsta .instatext {
     color: #a09e9e;
     font-family: 'Roboto', sans-serif;
@@ -31,16 +33,22 @@
     width: 45rem;
 }
 
-.instaPicContainer .slider{
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-  }
-
 .instagramContainer .instaPicContainer {
     width: 100%;
     height: 13rem;
     overflow: hidden;
+}
+
+.instaPicContainer .slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider .picBlock {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    transition: transform 0.5s ease-in-out;
 }
 
 .picBlock .picWrapper {
@@ -48,80 +56,124 @@
     width: 100%;
     height: 100%;
 }
+
 .picWrapper .pic {
     width: 100%;
     height: 210px;
     cursor: pointer;
 }
+
 .picWrapper .pic:hover {
     transform: scale(1.03);
     filter: brightness(0.7);
 }
 
-.slider .picBlock {
-    display: grid;
-    transition: transform 0.5s ease-in-out;
-    grid-template-columns: repeat(5, 1fr);
-}
 .picWrapper .fa-instagram {
     position: absolute;
-    cursor: pointer;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color: white;
     opacity: 0;
     transition: opacity 0.4s;
+    cursor: pointer;
+    background: none;
 }
 
 .picWrapper:hover .fa-instagram {
     opacity: 1;
 }
 
+/* --- MEDIA QUERIES --- */
+
 @media (max-width: 1260px) {
     .slider .picBlock {
         grid-template-columns: repeat(4, 1fr);
     }
+
     .picWrapper .pic {
-        width: 100%;
         height: 210px;
     }
-    .instagramContainer .textInstaComponent{
+
+    .instagramContainer .textInstaComponent {
         margin-left: 4rem;
     }
+
     .instagramContainer .instaPicContainer {
         overflow: hidden;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .slider .picBlock {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .instagramContainer .instaPicContainer {
         width: 100%;
         height: 18rem;
+        overflow: hidden;
     }
-    .textInstaComponent .subTextInsta{
+
+    .textInstaComponent .subTextInsta {
         height: 6rem;
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
+        padding-left: 0;
+        margin-left: 0;
     }
+
     .subTextInsta .instatext {
         width: 100%;
     }
-    .instagramContainer .textInstaComponent{
+
+    .instagramContainer .textInstaComponent {
         height: 13rem;
     }
+
     .picWrapper .pic {
-        width: 100%;
         height: 300px;
     }
-    .instagramContainer .instaPicContainer {
-        overflow: hidden;
+}
+
+@media (max-width: 900px) and (min-width: 700px) {
+    .instagramContainer {
+        height: 700px;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .textInstaComponent .subTextInsta {
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .subTextInsta .instatext {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 750px){
+    .instagramContainer {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .instagramContainer .textInstaComponent {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .textInstaComponent .subTextInsta {
+        padding-left: 0;
+        margin-left: 0;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
@@ -129,25 +181,30 @@
     .slider .picBlock {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .instagramContainer {
+        height: 100vh;
+    }
+
     .instagramContainer .instaPicContainer {
         width: 100%;
         height: 25rem;
+        overflow: hidden;
     }
-    .textInstaComponent .subTextInsta{
+
+    .textInstaComponent .subTextInsta {
         height: 6rem;
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
         gap: 10px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-left: 0;
     }
-    .instagramContainer .instaPicContainer {
-        overflow: hidden;
-    }
+
+
     .picWrapper .pic {
-        width: 100%;
         height: 426px;
-    }
-    .instagramContainer {
-        height: 100vh;
     }
 }

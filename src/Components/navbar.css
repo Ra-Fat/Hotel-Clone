@@ -1,168 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-.containerNavbar{
-    display: flex;
+
+.containerNavbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
-.containerNavbar .navbar{
-    margin-top: 2.5rem;
+
+.containerNavbar .navbar {
     display: flex;
-    width: 1295px;
-    height: 41px;
-    justify-content: space-between;
+    max-width: 1295px;
+    margin: 0 auto;
+    padding: 0 2rem;
     align-items: center;
+    justify-content: space-between;
 }
-.logo a{
-    font-size: 24px;
-    font-weight: bold;
-    transition: 0.3s;
+
+/* Logo */
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
     font-family: 'Work Sans', sans-serif;
 }
-.logo a:hover{
-    color: rgb(231, 228, 228);
-}
-.containerNavbar .navbar nav ul{
-    display: flex;
-    margin-left: 10.6rem;
-    gap: 1.5rem;
-    list-style: none;
 
+.logo a:hover {
+    color: #ddd;
 }
-.containerNavbar .navbar nav ul a{
-    text-decoration: none;
-    color: #FFFFFF80;
-    font-size: 14px;
-    transition: 0.3s;
-    font-family: 'Roboto', sans-serif;
-}
-.containerNavbar .navbar nav ul a:hover{
-    color: white;
-}
-.containerNavbar .navbar nav ul a.active{
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    transition: 0.3s;
-    font-family: 'Roboto', sans-serif;
-}
-.containerNavbar .navbar .contactNumber{
+
+/* Nav Links */
+.containerNavbar .navbar nav ul {
     display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-right: 4.8rem;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+}
+
+.containerNavbar .navbar nav ul a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.containerNavbar .navbar nav ul a:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.containerNavbar .navbar nav ul a.active {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Contact */
+.containerNavbar .navbar .contactNumber {
+    display: flex;
+    gap: 0.5rem;
     align-items: center;
 }
+
 .contactNumber .phIcon {
-    width: 2.5rem;
-    height: 2.5rem;
-    text-decoration: none;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: 0.3s;
+    transition: border 0.3s ease;
 }
-.contactNumber .phIcon:hover{
+
+.contactNumber .phIcon:hover {
     border: 2px solid white;
 }
-.phIcon i{
-    border: none;
-    font-size: 12px;
-    color: white;
-    background: none;
-}
-.contactNumber .phNumber{
-    text-decoration: none;
+
+.phIcon i {
     color: white;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
 }
-.fa-angle-down{
-    font-size: 10px;
+
+.contactNumber .phNumber {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
 }
-.destination a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-html {
-    scroll-behavior: smooth;
-}
-.btnMenu,.btnClose{
+
+/* Mobile Styles */
+.btnMenu,
+.btnClose {
     display: none;
 }
-.btnMenu i{
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
-    transition: transform 0.2s ease-in-out;
-}
-.btnMenu i:hover{
-    transform: scale(0.9);
-}
 
-@media (max-width:1300px){
-    .logo{
-        margin-left: 6rem;
-    }
-}
-
-@media (max-width:1000px){
-    .containerNavbar .navbar nav ul
-    {
-        display: flex;
+@media (max-width: 1000px) {
+    .containerNavbar .navbar nav ul {
         flex-direction: column;
         position: fixed;
-        width: 0;
-        overflow: hidden;
-        height: 100vh;
+        top: 80px;
         right: 0;
-        top: 0;
+        width: 0; /* remove this */
+        height: 300px;
+        overflow: hidden;
+        padding: 2rem 0;
         background-color: white;
-        padding: 5rem 0;
-        transition: 0.5s;
+        background-color: rgba(55, 61, 77, 0.95);
+        backdrop-filter: blur(10px);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        width: 200px; /* fixed width */
+        transform: translateX(100%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+
+        z-index: 9999;
     }
-    .containerNavbar .navbar nav ul a{
-        color: black;
-        margin-left: 3rem;
+    .containerNavbar .navbar nav ul.display {
+        padding: 2rem;
+        transform: translateX(0);
+        opacity: 1;
     }
-    .containerNavbar .navbar nav ul a:hover{
-        color: rgb(39, 152, 39);
+
+    .containerNavbar .navbar nav ul a {
+        color: white;
+        margin: 0;
     }
-    .containerNavbar .navbar nav ul a.active{
-        color: rgb(39, 152, 39);
+
+    .containerNavbar .navbar nav ul a.active {
+        background-color: rgba(255, 255, 255, 0.1);
     }
-    .containerNavbar .navbar .contactNumber{
+
+    .containerNavbar .navbar .contactNumber {
         display: none;
     }
-    .containerNavbar .navbar nav ul.display{
-        width: 300px;
-        transition: 0.5s;
-    }
-    .btnMenu{
+
+    .btnMenu {
         display: block;
-        margin-right: 5rem;
-    }
-    .btnClose{
-        position: absolute;
-        top: 0.3rem;
-        right: 2rem;
-        display: block;
-        color: black;
+        font-size: 2rem;
+        color: white;
         cursor: pointer;
-        font-size: 2.5rem;
-        transition: 0.4s;
     }
-    .btnClose:hover{
-        color: rgb(70, 68, 68);
-        transform: scale(0.8);
+
+    .btnClose {
+        display: block;
+        position: absolute;
+        top: 0.5rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 680px) {
+    .navbar .logo {
+        margin-left: 1rem;
+    }
+
+    .navbar .btnMenu {
+        margin-right: 1rem;
     }
 }

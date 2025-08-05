@@ -63,6 +63,7 @@
 textarea{
     padding: 10px;
     height: 20rem;
+      resize: none;
     background-color: rgb(237, 237, 237);
     border: none;
 }
@@ -276,3 +277,9 @@ textarea{
     }
   }
     
+@media (max-width: 700px){
+   .SubContactFormContainer{
+    padding-left: 0;
+   }
+
+}

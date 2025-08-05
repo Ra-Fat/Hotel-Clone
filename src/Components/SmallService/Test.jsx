@@ -9,7 +9,7 @@ import './test.css';
 
 export default function ServiceSmallPart() {
     const containerRef = useRef(null);
-    const scrollAmount = 450;
+    const scrollAmount = 350;
 
     const handleScroll = (direction) => {
         if (containerRef.current) {

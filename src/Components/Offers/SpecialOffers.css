@@ -103,7 +103,7 @@
   color: #00917c;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 992px) {
   .card-col {
     flex: 0 0 50%;

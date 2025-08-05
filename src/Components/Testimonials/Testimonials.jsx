@@ -70,7 +70,7 @@ function TestiMo() {
     return (
         <div className='TestimoContainer'>
             <div className="SubContainerTestimo">
-                <div data-aos="fade-up" data-aos-duration="1300" className="textContainer">
+                <div data-aos="fade-up" data-aos-duration="1300" className="textContainer test">
                     <p className="testimoTitle">TESTIMONIALS</p>
                     <p className="smallTextTestimo">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                 </div>

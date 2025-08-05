@@ -137,3 +137,9 @@
         padding-left: 3rem;
     }
 }
+
+@media (max-width: 900px) and (min-width: 800px) {
+   .BlogContainer{
+        height: 750px;
+   }
+}

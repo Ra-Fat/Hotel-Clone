@@ -36,7 +36,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container questionContainer">
       <div data-aos="fade-up" data-aos-duration="1300" className="faq-left">
         <h2 className="faq-title">FREQUENTLY ASKED QUESTIONS</h2>
       </div>

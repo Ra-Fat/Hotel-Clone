@@ -63,3 +63,10 @@
         width: 30rem;
     }
 }
+
+@media (max-width: 680px) {
+   .PicCover .introuceBlock .Text{
+        width: 22rem;
+        font-size: 36px;
+    }
+}
