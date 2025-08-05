@@ -1,5 +1,5 @@
 import React from "react";
-import "./contactform.css";
+import "./ContactForm.css";
 
 export default function ContactForm() {
   return (
